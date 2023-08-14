@@ -1,0 +1,163 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* colors */
+:root {
+    /*  Primary */
+    --Tomato: hsl(4, 100%, 67%);
+
+    /*Neutral */
+    --Dark_Slate_Grey: hsl(234, 29%, 20%);
+    --Charcoal_Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* General styling */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling */
+main {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark_Slate_Grey);
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--White);
+    width: 50%;
+    height: 70%;
+}
+
+.details {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.heading-of-details {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
+.details div p {
+    font-size: 10px;
+}
+
+.details>div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 7px;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--Tomato);
+    font-size: smaller;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: smaller;
+    font-weight: 700;
+    
+}
+
+#email-text-area {
+    color: var(--Grey);
+    border: 1px solid var(--Grey);
+    height: 45px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.submit-button {
+    background-color: var(--Dark_Slate_Grey);
+    color: var(--White);
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: var(--Tomato);
+    border: none;
+}
+
+.disapper {
+    display: none;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-invalid{
+    color: var(--Tomato) !important;
+    background-color: hsla(4, 100%, 67%, 0.163);
+    border: 1px solid var(--Tomato) !important;
+}
+
+.labels span{
+    color: var(--Tomato);
+    font-size: smaller;
+    font-weight: 700;
+}
+
+
+/* Success Message */
+
+.container-message {
+    width: 30% !important;
+    padding: 40px;
+}
+
+.heading-of-message {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.container-message p {
+    font-size: smaller;
+}
+
+.container-message p span {
+    font-weight: 700;
+}
