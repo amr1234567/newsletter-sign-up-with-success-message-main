@@ -45,13 +45,12 @@ main {
     height: 70%;
 }
 
-.img-mobile{
+.img-mobile {
     display: none;
 }
 
 .details {
     padding: 30px 20px;
-    
 }
 
 .heading-of-details {
@@ -87,7 +86,6 @@ main {
 }
 
 form {
-    /* margin-top: 20px; */
     display: flex;
     flex-direction: column;
 }
@@ -95,7 +93,6 @@ form {
 label {
     font-size: smaller;
     font-weight: 700;
-    
 }
 
 #email-text-area {
@@ -126,20 +123,20 @@ label {
     display: none;
 }
 
-.labels{
+.labels {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.label-invalid{
+.label-invalid {
     color: var(--Tomato) !important;
     background-color: hsla(4, 100%, 67%, 0.163);
     border: 1px solid var(--Tomato) !important;
 }
 
-.labels span{
+.labels span {
     color: var(--Tomato);
     font-size: smaller;
     font-weight: 700;
@@ -165,5 +162,3 @@ label {
 .container-message p span {
     font-weight: 700;
 }
-
-
